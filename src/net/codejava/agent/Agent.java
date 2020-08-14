@@ -7,15 +7,16 @@ import javax.persistence.Id;
  
 @Entity
 public class Agent {
+	  @Id
+	  @GeneratedValue(strategy = GenerationType.IDENTITY)
+	  private Long agent_id;
+	 
     private String firstname;
     private String middlename;
     private String lastname;
     private String password;
     private String phone;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long agent_id;
- 
+  
 
     private String emailaddress;
  

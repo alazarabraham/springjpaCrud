@@ -16,6 +16,8 @@
         <input type="submit" value="Search" />
     </form>
     <h3><a href="/InsuranceManager/new">New Agent</a></h3>
+    <h3><a href="/InsuranceManager/policyindex">Policies</a></h3>
+    
     <table border="1" cellpadding="5">
         <tr>
             <th>Agent Id</th>
@@ -39,7 +41,7 @@
             <td>
                 <a href="/InsuranceManager/edit?agent_id=${agent.agent_id}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
-                <a href="/InsuranceManager/delete?agent_id=1=${agent.agent_id}">Delete</a>
+                <a href="/InsuranceManager/delete?agent_id=${agent.agent_id}">Delete</a>
             </td>
         </tr>
         </c:forEach>
